@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passo a Passo Git</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+            padding: 50px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            color: #555;
+        }
+        p {
+            color: #666;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Passo a Passo para Colaboração com Git</h1>
+    
+    <h2>1. Configurar Acessos</h2>
+    <p>Peça acesso ao repositório e configure sua chave SSH ou token de autenticação.</p>
+    
+    <h2>2. Clonar o Repositório</h2>
+    <p>Baixe o código para sua máquina:</p>
+    <code>git clone &lt;URL_DO_REPO&gt;</code>
+    
+    <h2>3. Criar uma Nova Branch</h2>
+    <p>Trabalhe em uma branch separada para cada tarefa:</p>
+    <code>git checkout -b minha-feature</code>
+    
+    <h2>4. Fazer Alterações e Commitar</h2>
+    <p>Edite os arquivos, adicione e faça commit:</p>
+    <code>git add .</code><br>
+    <code>git commit -m "Descrição da mudança"</code>
+    
+    <h2>5. Sincronizar com o Repositório Remoto</h2>
+    <p>Antes de enviar, atualize sua branch:</p>
+    <code>git pull origin main --rebase</code>
+    
+    <h2>6. Enviar as Alterações</h2>
+    <p>Suba sua branch para o repositório remoto:</p>
+    <code>git push origin minha-feature</code>
+    
+    <h2>7. Criar um Pull Request (PR)</h2>
+    <p>No GitHub/GitLab, crie um PR da sua branch para a branch principal.</p>
+    
+    <h2>8. Revisão e Ajustes</h2>
+    <p>Receba feedback, corrija se necessário e atualize o PR.</p>
+    
+    <h2>9. Merge na Branch Principal</h2>
+    <p>Após aprovação, faça merge da branch:</p>
+    <code>git checkout main</code><br>
+    <code>git pull origin main</code><br>
+    <code>git merge minha-feature</code><br>
+    <code>git push origin main</code>
+    
+    <h2>10. Baixar Atualizações</h2>
+    <p>Antes de começar uma nova tarefa, sempre atualize o repositório:</p>
+    <code>git checkout main</code><br>
+    <code>git pull origin main</code>
+</body>
+</html>
